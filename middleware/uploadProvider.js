@@ -2,9 +2,9 @@ import multer from "multer";
 import fs from "fs"
 
 var DIR = './public/';
-if (!fs.existsSync(DIR)) {  // CREATE DIRECTORY IF NOT FOUND
+/*if (!fs.existsSync(DIR)) {  // CREATE DIRECTORY IF NOT FOUND
   fs.mkdirSync(DIR, { recursive: true });
-}
+}*/
  const storage = multer.diskStorage({
   destination: (req, file, callback) => {
     
